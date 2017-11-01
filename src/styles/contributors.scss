@@ -1,0 +1,88 @@
+@import './var.scss';
+
+$boxShadow: 0 1px 3px rgba(0,0,0,0.05), 0 8px 15px rgba(0,0,0,0.1);
+$color: #293a46;
+
+@keyframes sha-bg-stripes {
+  from{ 
+    background-position: 228px 0; 
+  }
+  to{ 
+    background-position: 0 0; 
+  }
+}
+
+.sha-contributors{
+  height: $per100;
+  overflow-y: scroll;
+  font-weight: 200;
+  color: $color;
+
+  .sha-title{
+    font-size: $font48;
+    padding-bottom: 20px;
+    margin-bottom: $mar20;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .sha-contributors-wall{
+    .sha-contributor{
+      &:hover{
+        cursor: pointer;
+        &:before{
+          animation: sha-bg-stripes 2s linear infinite;
+        }
+      }
+      &:before{
+        display: inline-block;
+        content: "";
+        width: $per100;
+        height: 100px;
+        background-image: linear-gradient(22deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+        background-color: cadetblue;
+      }
+      width: 256px;
+      height: 310px;
+      margin-bottom: 20px;
+      color: $color;
+      .sha-logo{
+        @include imgSize(90px);
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: $boxShadow;
+        border: 3px solid $white;
+        background-color: $white;
+        left: 82px;
+        top: 55px;
+      }
+      .sha-info{
+        line-height: 26px;
+        padding: 30px;
+        @include textCenter();
+        .sha-nickname{
+          font-size: $font20;
+          word-spacing: 2px;
+          letter-spacing: 2px;
+          margin-bottom: $mar20;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $mediaPhone) {
+  .sha-contributors{
+    .sha-title{
+      @include textCenter();
+      font-size: 24px;
+    }
+    .sha-contributors-wall{
+      .sha-contributor{
+        width: 100%;
+        .sha-logo{
+          left: calc(50% - 45px);
+        }
+      }
+    }
+  }
+}

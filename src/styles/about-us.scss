@@ -1,0 +1,60 @@
+.sha-router-main {
+  & .sha-about-us {
+    
+    .sha-carousel-legend {
+      @include legendTitle();
+    }
+    
+    .sha-carousel {
+      overflow: hidden;
+      position: relative;
+      .slick-slide {
+        text-align: center;
+        height: 400px;
+        line-height: 400px;
+        background: #364d79;
+        overflow: hidden;
+        img {
+          width : 100%;
+          height: inherit;
+        }
+      }
+    }
+    .sha-intro-title {
+      @include legendTitle();
+    }
+    .sha-intro-content {
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      padding: 0 20px;
+      line-height: $font16 * 2;
+      font-size: $font16;
+      text-indent: $font16 * 2;
+      font-weight: 200;
+    }
+  }
+}
+
+@media (max-width: $mediaPhone) {
+  .sha-router-main {
+    & .sha-about-us {
+      .sha-carousel-legend {
+        @include textCenter();
+      }
+      .sha-carousel {
+        .slick-slide {
+          text-align: center;
+          height: 200px;
+          line-height: 200px;
+          img {
+            width : 100%;
+            height: inherit;
+          }
+        }
+      }
+      .sha-intro-title {
+        @include textCenter();
+      }
+    }
+  }
+}
