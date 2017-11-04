@@ -56,7 +56,7 @@ export default class Contributors extends React.Component {
           如何成为一位贡献者
         </div>
         <p>
-          成为一位项目贡献者非常简单, 这里有一个链接, 相信你能在里面找到你想要的答案
+          成为一位项目贡献者非常简单, 这里有一个链接, 相信你能在里面找到你想要的答案。
           <a href="https://github.com/FccSHA/FccSHA.github.io/blob/master/README.md" target="_blank">链接</a>
         </p>
       </div>

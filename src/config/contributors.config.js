@@ -14,7 +14,7 @@ export default [
   {
     username: 'Becavalier',
     nickname: '航妹',
-    hobbies: ['女装','大佬','科学家', '女装大佬'],
+    hobbies: ['女装','大佬','科学家'],
     cup: 'C++',
   }
 ];
