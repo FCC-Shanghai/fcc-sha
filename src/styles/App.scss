@@ -1,5 +1,6 @@
 @import './var.scss';
 @import './about-us.scss';
+@import './achievements.scss';
 
 * {
   box-sizing: border-box;
@@ -85,7 +86,7 @@ h1, h2, h3, h4, h5 {
     .sha-router-main {
       height: $per100;
       margin-left: 200px;
-      padding-top: 20px;
+      padding: 20px;
       overflow: scroll;
       > div {
         width: 95%;

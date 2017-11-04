@@ -8,15 +8,18 @@
     .sha-carousel {
       overflow: hidden;
       position: relative;
-      .slick-slide {
-        text-align: center;
-        height: 400px;
-        line-height: 400px;
-        background: #364d79;
-        overflow: hidden;
-        img {
-          width : 100%;
-          height: inherit;
+      margin: 15px 0;
+      .slick-list {
+        background: linear-gradient(90deg, transparent, lightgrey 50%, lightgrey 50%, transparent 100%);
+        .slick-slide {
+          height: 300px;
+          background: transparent;
+          img {
+            height: 400px;
+            margin: auto;
+            top: -50px;
+            position: relative;
+          }
         }
       }
     }
