@@ -8,7 +8,7 @@ export default class Contributor extends React.Component {
     const color = ["pink", "red", "orange", "green", "cyan", "blue", "purple"];
     return (
       <Card className="sha-contributor">
-        <a target="_blank" href={"https://github.com/" + user.username}>
+        <a target="_blank" href={"https://github.com/" + user.username} rel="noopener noreferrer">
           <img className="sha-logo" alt="" src={user.avatar_url || '/static/imgs/EastPerl.svg'}/>
           <div className="sha-info">
             <div className="sha-nickname">{user.nickname}</div>
