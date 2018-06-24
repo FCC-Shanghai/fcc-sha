@@ -13,7 +13,6 @@ export default class AboutUs extends React.Component {
             <div><img src="/static/imgs/suzhou.png" alt="Su Zhou"/></div>
             <div><img src="/static/imgs/chengdu.png" alt="Cheng Du"/></div>
             <div><img src="/static/imgs/shanghai.jpeg" alt="Shang Hai"/></div>
-            <div><img src="/static/imgs/shanghai-2018#1.jpeg" alt="Shanghai 2018 #1"/></div>
           </Carousel>
         </div>
         <div className="sha-who-are-we">
