@@ -1,5 +1,5 @@
 sudo: required
-dis: trusty
+dist: trusty
 language: node_js
 node_js:
   - "8.11.3"
@@ -13,4 +13,4 @@ install:
 script:
   - npm run build
 after_script:
-  - ./deploy.sh
+  - sh ./deploy.sh
