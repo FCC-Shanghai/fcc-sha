@@ -1,5 +1,5 @@
-mkdir docs/static/imgs # Static files which needs to export to github pages 
-cp -r src/static/imgs/ docs/static/imgs/
+# Static files which needs to export to github pages 
+cp -R src/static/imgs docs/static/
 
 touch docs/CNAME # Generating CNAME file for github pages to resolve DNS
 echo "shanghai.freecodecamp.cn" >> docs/CNAME # site hostname
