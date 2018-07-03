@@ -26,7 +26,7 @@ export default class ActivityCard extends React.Component {
                 case activityTypeEnum.TALK:
                     return (
                         <Timeline.Item key={index}>
-                            <a target="_blank" rel="noopener" href={item.slidesUrl || 'javascript:void(0)'}>{item.agenda}</a>
+                            <a target="_blank" rel="noopener" href={item.slidesUrl || '#'}>{item.agenda}</a>
                         </Timeline.Item>)
                 default:
                     return (
