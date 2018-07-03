@@ -14,6 +14,6 @@ if [ "$TRAVIS_BRANCH" != "$DEPLOY_BRANCH" ]; then
       git add .
       git commit -m "Update github pages [skip ci]"
       git push "https://${GITHUB_TOKEN}@${GH_REPO}" master
+      exit 0
     fi
-  fi
 fi
