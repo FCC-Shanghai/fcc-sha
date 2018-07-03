@@ -9,6 +9,7 @@ if [ "$TRAVIS_BRANCH" != "$DEPLOY_BRANCH" ]; then
       echo ${GH_REPO}
       echo ${USER_EMAIL}
       echo ${USER_NAME}
+      echo ${GITHUB_TOKEN}
       git config user.name "${USER_NAME}"
       git config user.email "${USER_EMAIL}"
       git add .

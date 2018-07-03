@@ -6,7 +6,7 @@ node_js:
 env:
   global:
     - GH_REPO: github.com/FCC-Shanghai/fcc-sha.git
-    - USER_NAME: 'jeremywu'
+    - USER_NAME: 'wqx591449570@gmail.com'
     - USER_EMAIL: 'wqx591449570@gmail.com'
     - DEPLOY_BRANCH: 'master'
 install:
