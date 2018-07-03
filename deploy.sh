@@ -12,6 +12,7 @@ if [ "$TRAVIS_BRANCH" != "$DEPLOY_BRANCH" ]; then
       git commit -m "Update github pages [skip ci]"
       echo "Checking status"
       git status
+      git remote -v
       git remote add deploy "https://${GITHUB_TOKEN}@${GH_REPO}" &>/dev/null
       git push deploy master &>/dev/null
       exit 0
