@@ -10,11 +10,11 @@ if [ "$TRAVIS_BRANCH" != "$DEPLOY_BRANCH" ]; then
       git config user.email "${USER_EMAIL}"
       git add .
       echo "Checking status"
-      git status
       git commit -m "Update github pages [skip ci]"
-      git remote add deploy "https://${GITHUB_TOKEN}@${GH_REPO}" &>/dev/null
-      git remote -v
-      git push deploy master &>/dev/null
+      git branch deploy
+      git checkout master
+      git merge deploy
+      git push https://${GITHUB_TOKEN}@${GH_REPO} master
       exit 0
     fi
 fi
