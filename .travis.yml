@@ -3,11 +3,12 @@ dist: trusty
 language: node_js
 node_js:
   - "8.11.3"
-global:
-  - GH_REPO: github.com/FCC-Shanghai/fcc-sha.git
-  - USER_NAME: 'jeremywu'
-  - USER_EMIAL: 'wqx591449570@gmail.com'
-  - DEPLOY_BRANCH: 'master'
+env:
+  global:
+    - GH_REPO: github.com/FCC-Shanghai/fcc-sha.git
+    - USER_NAME: 'jeremywu'
+    - USER_EMIAL: 'wqx591449570@gmail.com'
+    - DEPLOY_BRANCH: 'master'
 install:
   - npm install
 script:
