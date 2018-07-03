@@ -1,5 +1,5 @@
 ## welcome to Shanghai(FCC)!
-
+[![Build Status](https://travis-ci.org/FCC-Shanghai/fcc-sha.svg?branch=master)](https://travis-ci.org/FCC-Shanghai/fcc-sha)
 ### About FCC Shanghai:
 
 ?	We are just a little piece of the [Free Code Camp Community](https://www.freecodecamp.cn) which located at Shanghai.
