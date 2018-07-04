@@ -29,7 +29,7 @@ export default class SideBar extends React.Component {
         <div className="sha-social">
           <h3 className="sha-social-legend">Join Us</h3>
           <p className="sha-social-icons">
-            <a href="https://github.com/FccSHA/FccSHA.github.io" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/FCC-Shanghai/fcc-sha" target="_blank" rel="noopener noreferrer">
               <img src="/static/imgs/github.svg" alt="" className="sha-social-icon"/>
             </a>
             <a href="//shang.qq.com/wpa/qunwpa?idkey=cd476c93cb4faf805ba36b1be3a0daf0359d31628b14f654fc7a086dd911d05a"
