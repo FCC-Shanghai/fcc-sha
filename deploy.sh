@@ -14,7 +14,7 @@ if [ "$TRAVIS_BRANCH" != "$DEPLOY_BRANCH" ]; then
       git branch deploy
       git checkout master
       git merge deploy
-      git push https://${GITHUB_TOKEN}@${GH_REPO} master
+      git push https://${TRAVIS_BOT_TOKEN}@${GH_REPO} master
       exit 0
     fi
 fi
