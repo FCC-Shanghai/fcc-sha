@@ -6,8 +6,8 @@ node_js:
 env:
   global:
     - GH_REPO: github.com/FCC-Shanghai/fcc-sha.git
-    - USER_NAME: 'jeremy wu'
-    - USER_EMAIL: 'wqx591449570@gmail.com'
+    - USER_NAME: 'FCC-Travis-BOT'
+    - USER_EMAIL: 'fcc-travis-bot@outlook.com'
     - DEPLOY_BRANCH: 'master'
 install:
   - npm install
