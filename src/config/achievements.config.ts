@@ -22,10 +22,10 @@ const ACHIEVEMENTS: Array<IAchievement> = [{
     title: '2017/04 FCC上海前端技术群线下Meetup #1',
     content: [
         {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
-        {agenda: '1、造轮子-简单的 MVVM 框架核心；- 于航', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vT1H7zXGGdkd008cWJmnEbxufEzQZ5m5yzS3IyK7c-rxJEpIM04bkSDtZcRc9WBi_tCtBc2ZUBCCoe3/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
-        {agenda: '2、SSO 核心原理；- Kenneth Choi', slidesUrl: null, type: activityTypeEnum.TALK},
-        {agenda: '3、RESTful API 架构设计；- 🐔', slidesUrl: null, type: activityTypeEnum.TALK},
-        {agenda: '4、Bigpipe 技术的前端应用；- 糖爸', slidesUrl: null, type: activityTypeEnum.TALK},
+        {agenda: '1、造轮子-简单的 MVVM 框架核心 - 于航；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vT1H7zXGGdkd008cWJmnEbxufEzQZ5m5yzS3IyK7c-rxJEpIM04bkSDtZcRc9WBi_tCtBc2ZUBCCoe3/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
+        {agenda: '2、SSO 核心原理 - Kenneth Choi；', slidesUrl: null, type: activityTypeEnum.TALK},
+        {agenda: '3、RESTful API 架构设计 - 🐔；', slidesUrl: null, type: activityTypeEnum.TALK},
+        {agenda: '4、Bigpipe 技术的前端应用 - 糖爸；', slidesUrl: null, type: activityTypeEnum.TALK},
         {agenda: '自由交流；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
     ],
     img: '/static/imgs/fcc-meetup1.jpeg'
@@ -33,9 +33,9 @@ const ACHIEVEMENTS: Array<IAchievement> = [{
     title: '2017/09 FCC上海前端技术群线下Meetup #2',
     content: [
         {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
-        {agenda: '1、函数柯理化在前端开发中的应用；- 于航', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vSoDMuL0tKgB98i9cQ8SYtsmgvyNRqTmyAnKlN1xF4G9QS-Zzd1PQ6B8ymDab6knNTxdHBnIF-Pg0qq/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
-        {agenda: '2、前端框架中的路由实现；- 🐔', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vQP_7TF7FGO4nNilgh2Rwe4FeiXe9Kkm5TDzebVkPN3xo0UN2ghHvr2aoYTdJsaUnRPB1CUCxbQArr5/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
-        {agenda: '3、JS 设计模式赏析；- 荷马', slidesUrl: null, type: activityTypeEnum.TALK},
+        {agenda: '1、函数柯理化在前端开发中的应用 - 于航；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vSoDMuL0tKgB98i9cQ8SYtsmgvyNRqTmyAnKlN1xF4G9QS-Zzd1PQ6B8ymDab6knNTxdHBnIF-Pg0qq/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
+        {agenda: '2、前端框架中的路由实现 - 🐔；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vQP_7TF7FGO4nNilgh2Rwe4FeiXe9Kkm5TDzebVkPN3xo0UN2ghHvr2aoYTdJsaUnRPB1CUCxbQArr5/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
+        {agenda: '3、JS 设计模式赏析 - 荷马；', slidesUrl: null, type: activityTypeEnum.TALK},
         {agenda: '自由交流；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
     ],
     img: '/static/imgs/fcc-meetup2.jpeg'

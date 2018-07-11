@@ -8,10 +8,10 @@ import {
 
 // components
 
-import AboutUs from '@/pages/aboutUs';
-import Contributors from '@/pages/contributors';
-import Achievements from '@/pages/achievements';
-import SideBar from '@/pages/sideBar';
+import AboutUs from '@/pages/AboutUs';
+import Contributors from '@/pages/Contributors';
+import Achievements from '@/pages/Achievements';
+import SideBar from '@/pages/SideBar';
 
 export const FccSha = () => (
   <Router>

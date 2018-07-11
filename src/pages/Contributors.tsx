@@ -1,16 +1,16 @@
-import React from 'react';
+import * as React from 'react';
 import axios, { AxiosResponse } from 'axios';
 import Contributor from '@Components/Contributor';
 import userNameList, { IContributor } from '@/config/contributors.config';
 import { Col, Row } from 'antd';
 
 type IState = {
-  users: Array<IContributor>
+  users: Array<IContributor>;
 };
 
 const USER_API_BASE_PATH = 'https://api.github.com/users/';
 
-export default class Contributors extends React.PureComponent<void, IState> {
+export default class Contributors extends React.PureComponent<any, IState> {
   constructor(props: void) {
     super(props);
     this.state = {
@@ -20,7 +20,7 @@ export default class Contributors extends React.PureComponent<void, IState> {
 
   getContributors(username?: string): Promise<Array<AxiosResponse>> {
     let promiseList = userNameList.map((user) => {
-      return axios.get(`${USER_API_BASE_PATH}/${user.username}`);
+      return axios.get(`${USER_API_BASE_PATH}${user.username}`);
     });
     return axios.all(promiseList);
   }

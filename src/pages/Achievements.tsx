@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import ActivityCard from '@Components/ActivityCard';
 import Payload from '@/config/achievements.config';
 import { Card } from 'antd';

@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "target": "es5",
     "noImplicitAny": true,
     "removeComments": true,
     "allowJs": true,
     "strict": true,
+    "sourceMap": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
