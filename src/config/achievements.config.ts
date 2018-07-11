@@ -1,3 +1,14 @@
+export interface IAchievement {
+    title: string;
+    content: Array<IAchievementContent>;
+    img: string;
+}
+
+export interface IAchievementContent {
+    agenda: string;
+    slidesUrl: string | null;
+    type: number;
+}
 
 /**
  * Definition of activity event type
@@ -7,7 +18,7 @@ export var activityTypeEnum = {
     'TALK': 2
 }
 
-export default [{
+const ACHIEVEMENTS: Array<IAchievement> = [{
     title: '2017/04 FCC上海前端技术群线下Meetup #1',
     content: [
         {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
@@ -41,3 +52,5 @@ export default [{
     ],
     img: '/static/imgs/fcc-meetup3.jpeg'
 }];
+
+export default ACHIEVEMENTS;

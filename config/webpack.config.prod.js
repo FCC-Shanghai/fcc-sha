@@ -86,9 +86,10 @@ module.exports = {
     // https://github.com/facebookincubator/create-react-app/issues/290
     // `web` extension prefixes have been added for better support
     // for React Native Web.
-    extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
+    extensions: ['ts', 'tsx', '.web.js', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
-      
+      '@Components': path.resolve('src/components'),
+      '@': path.resolve('src'),
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
@@ -111,19 +112,24 @@ module.exports = {
 
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
-      {
-        test: /\.(js|jsx)$/,
-        enforce: 'pre',
-        use: [
-          {
-            options: {
-              formatter: eslintFormatter,
+      // {
+      //   test: /\.(js|jsx)$/,
+      //   enforce: 'pre',
+      //   use: [
+      //     {
+      //       options: {
+      //         formatter: eslintFormatter,
               
-            },
-            loader: require.resolve('eslint-loader'),
-          },
-        ],
-        include: paths.appSrc,
+      //       },
+      //       loader: require.resolve('eslint-loader'),
+      //     },
+      //   ],
+      //   include: paths.appSrc,
+      // },
+      {
+        test: /\.tsx?$/,
+        loader: require.resolve('awesome-typescript-loader'),
+        exclude: [path.resolve(__dirname), 'node_modules']
       },
       // ** ADDING/UPDATING LOADERS **
       // The "file" loader handles all assets unless explicitly excluded.
@@ -161,15 +167,15 @@ module.exports = {
         },
       },
       // Process JS with Babel.
-      {
-        test: /\.(js|jsx)$/,
-        include: paths.appSrc,
-        loader: require.resolve('babel-loader'),
-        options: {
+      // {
+      //   test: /\.(js|jsx)$/,
+      //   include: paths.appSrc,
+      //   loader: require.resolve('babel-loader'),
+      //   options: {
           
-          compact: true,
-        },
-      },
+      //     compact: true,
+      //   },
+      // },
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.

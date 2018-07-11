@@ -1,5 +1,5 @@
 // dependencies
-import React from 'react';
+import * as React from 'react';
 import {
   HashRouter as Router,
   Route,
@@ -8,10 +8,10 @@ import {
 
 // components
 
-import AboutUs from '../pages/aboutUs';
-import Contributors from '../pages/contributors';
-import Achievements from '../pages/achievements';
-import SideBar from '../pages/sideBar';
+import AboutUs from '@/pages/aboutUs';
+import Contributors from '@/pages/contributors';
+import Achievements from '@/pages/achievements';
+import SideBar from '@/pages/sideBar';
 
 export const FccSha = () => (
   <Router>

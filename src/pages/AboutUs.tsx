@@ -1,7 +1,7 @@
 import React from 'react';
 import {Carousel} from 'antd';
 
-export default class AboutUs extends React.Component {
+export default class AboutUs extends React.PureComponent {
   render() {
     return (
       <div className="sha-about-us">

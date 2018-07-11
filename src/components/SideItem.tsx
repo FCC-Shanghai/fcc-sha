@@ -1,8 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'react-router-dom';
 import {Menu, Icon} from 'antd';
+import {ISideBarConfig} from '@/config/sidebar.config';
 
-export const SideItem = (props) => (
+interface IProps extends ISideBarConfig { };
+
+export const SideItem = (props: IProps) => (
   <Menu.Item {...props}>
     <Link to={props.to}>
       <Icon type={props.icon} style={{ fontSize: 16 }} />

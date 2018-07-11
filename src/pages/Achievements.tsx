@@ -1,9 +1,9 @@
 import React from 'react';
-import ActivityCard from '../components/activityCard'
-import Payload from '../config/achievements.config'
-import { Card } from 'antd'
+import ActivityCard from '@Components/ActivityCard';
+import Payload from '@/config/achievements.config';
+import { Card } from 'antd';
 
-export default class Achievements extends React.Component {
+export default class Achievements extends React.PureComponent {
   render() {
     const element = Payload.map((item, index) => {
         return <ActivityCard key={index} title={item.title} content={item.content} img={item.img}/>

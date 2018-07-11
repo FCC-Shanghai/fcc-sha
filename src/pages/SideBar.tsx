@@ -1,20 +1,24 @@
 import React from 'react';
-import {SideItem} from '../components/sideItem';
-import SideBarItems from '../config/sidebar.config';
+import {SideItem} from '@Components/SideItem';
+import SideBarItems from '@/config/sidebar.config';
 import {Menu, Popover, Button, Icon} from 'antd';
 
 let contactUsStr = "扫描二维码, 添加机器人为好友, 发送对应城市名: \"上海\", 即可进群"
+const imgWidth = {width: 200};
+const imgHeight = {height: 320};
+const imgSize = Object.assign({}, imgWidth, imgHeight);
+
 export default class SideBar extends React.Component {
   render() {
     const wechatPopover = (
-      <div style={{width: 200}}>
+      <div style={imgWidth}>
         <p>{contactUsStr}</p>
         <img src="/static/imgs/fcc-assistant.png" alt=""
-          style={{ height: '320px', width: '200px'}}/>
+          style={imgSize}/>
       </div>
     );
 
-    const NavBar = (<Menu class="sha-main-nav-phone" mode="inline" theme="light" defaultSelectedKeys={["0"]}>
+    const NavBar = (<Menu className="sha-main-nav-phone" mode="inline" theme="light" defaultSelectedKeys={["0"]}>
       {SideBarItems.map((v, i) => <SideItem title={v.title} icon={v.icon} to={v.to} key={i}/>)}
     </Menu>);
 
