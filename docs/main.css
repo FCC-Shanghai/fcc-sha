@@ -64,6 +64,9 @@ body {
   .sha-router-main .sha-about-us .sha-intro-title {
     text-align: center; } }
 
+.sha-router-main .sha-achievements p {
+  margin-bottom: 0; }
+
 .sha-router-main .sha-achievements .sha-activity-card {
   margin: 20px 0; }
   .sha-router-main .sha-achievements .sha-activity-card img {
@@ -260,5 +263,3 @@ h1, h2, h3, h4, h5 {
     .sha-contributors .sha-contributors-wall .sha-contributor .sha-logo {
       left: calc(50% - 45px); } }
 
-
-/*# sourceMappingURL=main.css.map*/
