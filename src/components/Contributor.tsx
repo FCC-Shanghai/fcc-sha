@@ -1,6 +1,7 @@
 import '@/styles/contributors.scss';
 import * as React from 'react';
-import { Card, Tag } from 'antd';
+import Card from 'antd/es/card';
+import Tag from 'antd/es/tag';
 import { IContributor } from '@/config/contributors.config';
 
 interface IUser extends IContributor {

@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
@@ -39,6 +40,7 @@ module.exports = {
   bail: true,
   // We generate sourcemaps in production. This is slow but gives good results.
   // You can exclude the *.map files from the build during deployment.
+  // disable sourcemap under production env
   // devtool: 'source-map',
   // In production, we only want to load the polyfills and the app code.
   entry: [require.resolve('./polyfills'), paths.appIndexJs],
@@ -57,6 +59,7 @@ module.exports = {
       path
       .relative(paths.appSrc, info.absoluteResourcePath)
       .replace(/\\/g, '/'),
+    libraryTarget: 'umd'
   },
   resolve: {
     modules: ['node_modules', paths.appNodeModules].concat(
@@ -96,14 +99,6 @@ module.exports = {
         //   happyPackMode: true,
         // }
       },
-      // ** ADDING/UPDATING LOADERS **
-      // The "file" loader handles all assets unless explicitly excluded.
-      // The `exclude` list *must* be updated with every change to loader extensions.
-      // When adding a new loader, you must add its `test`
-      // as a new entry in the `exclude` list in the "file" loader.
-
-      // "file" loader makes sure those assets end up in the `build` folder.
-      // When you `import` an asset, you get its filename.
       {
         exclude: [
           /\.html$/,
@@ -132,18 +127,6 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]',
         },
       },
-      // The notation here is somewhat confusing.
-      // "postcss" loader applies autoprefixer to our CSS.
-      // "css" loader resolves paths in CSS and adds assets as dependencies.
-      // "style" loader normally turns CSS into JS modules injecting <style>,
-      // but unlike in development configuration, we do something different.
-      // `ExtractTextPlugin` first applies the "postcss" and "css" loaders
-      // (second argument), then grabs the result CSS and puts it into a
-      // separate file in our build process. This way we actually ship
-      // a single CSS file in production instead of JS code injecting <style>
-      // tags. If you use code splitting, however, any async bundles will still
-      // use the "style" loader inside the async code so CSS from them won't be
-      // in the main CSS file.
       {
         test: /\.(scss|css)$/,
         use: [
@@ -154,13 +137,6 @@ module.exports = {
         ]
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
-      // ** STOP ** Are you adding a new loader?
-      // {
-      //   test: /\.scss$/,
-      //   loaders: ['style-loader', 'css-loader', 'sass-loader'],
-      //   exclude: ['node_modules/']
-      // }
-      // Remember to add the new extension(s) to the "file" loader exclusion list.
     ],
   },
   plugins: [
@@ -187,6 +163,11 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
+    new UglifyJsPlugin({
+      cache: true,
+      parallel: true,
+      sourceMap: true // set to true if you want JS source maps
+    })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
@@ -197,7 +178,13 @@ module.exports = {
     tls: 'empty',
   },
   optimization: {
-    minimize: true,
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true // set to true if you want JS source maps
+      })
+    ],
     concatenateModules: true,
     removeAvailableModules: true,
     removeEmptyChunks: true,
@@ -208,5 +195,42 @@ module.exports = {
     usedExports: true,
     sideEffects: true,
   },
-  externals: ['antd', 'axios', 'react', 'react-dom', 'react-router', 'react-router-dom', 'object-assign', 'promise']
+  externals: {
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react',
+    },
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+      commonjs: 'react-dom',
+      amd: 'react-dom',
+    },
+    axios: {
+      root: 'axios',
+      commonjs: 'axios',
+      commonjs2: 'axios',
+      amd: 'axios',
+    },
+    'react-router': {
+      root: 'ReactRouter',
+      commonjs: 'react-router',
+      commonjs2: 'react-router',
+      amd: 'react-router',
+    },
+    'react-router-dom': {
+      root: 'ReactRouterDOM',
+      commonjs: 'react-router-dom',
+      commonjs2: 'react-router-dom',
+      amd: 'react-router-dom',
+    },
+    promise: {
+      root: 'Promise',
+      commonjs: 'promise',
+      commonjs2: 'promise',
+      amd: 'promise'
+    }
+  }
 };

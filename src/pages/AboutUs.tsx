@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Carousel} from 'antd';
+import Carousel from 'antd/es/carousel';
 
 export default class AboutUs extends React.PureComponent {
   render() {

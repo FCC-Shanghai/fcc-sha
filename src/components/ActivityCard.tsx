@@ -1,5 +1,8 @@
 import * as React from 'react';
-import {Row, Col, Card, Timeline } from 'antd';
+import Row from 'antd/es/row';
+import Col from 'antd/es/col';
+import Card from 'antd/es/card';
+import Timeline from 'antd/es/timeline';
 import { activityTypeEnum, IAchievement } from '@/config/achievements.config';
 interface IProps extends IAchievement { }
 

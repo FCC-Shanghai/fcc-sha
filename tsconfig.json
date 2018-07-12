@@ -17,10 +17,10 @@
       "dom",
       "es7"
     ],
-    "module": "commonjs",
+    "module": "esnext",
     "paths": {
       "@Components/*": ["src/components/*"],
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
     },
     "jsx": "react",
     "allowSyntheticDefaultImports": true

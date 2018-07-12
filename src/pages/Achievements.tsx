@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ActivityCard from '@Components/ActivityCard';
 import Payload from '@/config/achievements.config';
-import { Card } from 'antd';
+import Card from 'antd/es/card';
 
 export default class Achievements extends React.PureComponent {
   render() {

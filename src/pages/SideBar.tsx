@@ -1,7 +1,10 @@
 import * as React from 'react';
 import {SideItem} from '@Components/SideItem';
 import SideBarItems from '@/config/sidebar.config';
-import {Menu, Popover, Button, Icon} from 'antd';
+import Menu from 'antd/es/menu';
+import Popover from 'antd/es/popover';
+import Button from 'antd/es/button';
+import Icon from 'antd/es/icon';
 
 let contactUsStr = "扫描二维码, 添加机器人为好友, 发送对应城市名: \"上海\", 即可进群"
 const imgWidth = {width: 200};

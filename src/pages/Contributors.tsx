@@ -2,7 +2,8 @@ import * as React from 'react';
 import axios, { AxiosResponse } from 'axios';
 import Contributor from '@Components/Contributor';
 import userNameList, { IContributor } from '@/config/contributors.config';
-import { Col, Row } from 'antd';
+import Col from 'antd/es/col';
+import Row from 'antd/es/Row';
 
 type IState = {
   users: Array<IContributor>;
