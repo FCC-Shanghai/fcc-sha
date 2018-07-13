@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from 'axios';
 import Contributor from '@Components/Contributor';
 import userNameList, { IContributor } from '@/config/contributors.config';
 import Col from 'antd/es/col';
-import Row from 'antd/es/Row';
+import Row from 'antd/es/row';
 
 type IState = {
   users: Array<IContributor>;
