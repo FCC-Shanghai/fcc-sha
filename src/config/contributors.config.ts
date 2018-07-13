@@ -23,6 +23,12 @@ export const CONTRIBUTORS: Array<IContributor> = [
     nickname: '航妹',
     hobbies: ['女装', '大佬', '科学家'],
     cup: 'C++',
+  },
+  {
+    username: 'Roxyhuang',
+    nickname: '搓桑',
+    hobbies: ['学习', '钻研'],
+    cup: 'A++'
   }
 ];
 
