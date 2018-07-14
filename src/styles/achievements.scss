@@ -1,7 +1,12 @@
+@import "./var.scss";
+
 .sha-router-main {
   .sha-achievements {
+    p {
+      margin-bottom: 0;
+    }
     .sha-activity-card {
-      margin: 20px 0;
+      margin: $font20 0;
       img {
         border-radius: 4px;
       }

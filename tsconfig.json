@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es5",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "allowJs": true,
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "lib": [
+      "es6",
+      "dom",
+      "es7"
+    ],
+    "module": "esnext",
+    "paths": {
+      "@Components/*": ["src/components/*"],
+      "@/*": ["src/*"],
+    },
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
