@@ -2,7 +2,7 @@
 **Last build status:** [![Build Status](https://travis-ci.org/FCC-Shanghai/fcc-sha.svg?branch=master)](https://travis-ci.org/FCC-Shanghai/fcc-sha)
 ### About FCC Shanghai:
 
--	We are just a little piece of the [Free Code Camp Community](https://www.freecodecamp.cn) which located at Shanghai.
+-	We are just a little piece of the [Free Code Camp Community](https://www.freecodecamp.one) which located at Shanghai.
 
 -	The reason that I came up with this whole **building-a-main-page** idea is that I think each individual community of this huge one should has their own independent website to post their information. At this very moment, I am glad to tell everyone that the website is officially good to go.
 

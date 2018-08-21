@@ -2,5 +2,5 @@
 cp -R src/static/imgs docs/static/
 
 touch docs/CNAME # Generating CNAME file for github pages to resolve DNS
-echo "shanghai.freecodecamp.cn" >> docs/CNAME # site hostname
+echo "shanghai.freecodecamp.one" >> docs/CNAME # site hostname
 cp favicon.ico docs/favicon.ico # Override React simple app auto generated favicon
