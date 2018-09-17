@@ -51,6 +51,21 @@ const ACHIEVEMENTS: Array<IAchievement> = [{
         {agenda: '自由交流 合影留念；', slidesUrl: null, type: activityTypeEnum.NONE_TALK}
     ],
     img: '/static/imgs/fcc-meetup3.jpeg'
-}];
+}, {
+    title: '2018/09 FCC上海前端技术群线下Meetup #4',
+    content: [
+        {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
+        {agenda: '1、Layers: a case study of CSS optimization - 🐑🐑🐑(吴名扬)；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vRIsRF2Kz0to_0OJ_vrS4MODvj__SLtRWlXGdqt38VbahxXMHmGHyd5QvsxSCRlxM0ZWjV-szjI3qEy/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
+        {agenda: '2、webRTC的场景创新和体验优化 - 韦躐晟；', slidesUrl: 'https://drive.google.com/file/d/1t4rfAeYmmpdPO-f4vSgJUzA5J8HKq5a6/view?usp=sharing', type: activityTypeEnum.TALK},
+        {agenda: '3、点融CIS基础设施 - 林选伟；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vTielVNY-uGXQduStugzXq4jPepTDns66AbtgyL3DNKmzx48W36Ngx_2QI438XUJFQ2C35aH7UWZF-Z/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
+        {agenda: '4、函数式语言: ClosureScript 在前端开发的体验 - 题叶；', slidesUrl: 'https://gist.github.com/jiyinyiyong/561cd06ad1a1537dc8bcc15109bcf1cc', type: activityTypeEnum.TALK},
+        {agenda: '5、在错误中寻找正确的方向: 应用升级和重构之路 - WiWi；', slidesUrl: 'https://drive.google.com/open?id=0ByUlCDydqkHLcWNDY0R3N0FJMDZkRmxaWDRwdUJfQ3I1WDJZ', type: activityTypeEnum.TALK},
+        {agenda: '自由交流 合影留念；', slidesUrl: null, type: activityTypeEnum.NONE_TALK}
+    ],
+    img: '/static/imgs/fcc-meetup4.JPG'
+}
+
+
+];
 
 export default ACHIEVEMENTS;

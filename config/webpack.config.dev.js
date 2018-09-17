@@ -238,5 +238,42 @@ module.exports = {
   performance: {
     hints: false,
   },
-  externals: ['antd', 'axios', 'react', 'react-dom', 'react-router', 'react-router-dom', 'object-assign', 'promise']
+  externals: {
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react',
+    },
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+      commonjs: 'react-dom',
+      amd: 'react-dom',
+    },
+    axios: {
+      root: 'axios',
+      commonjs: 'axios',
+      commonjs2: 'axios',
+      amd: 'axios',
+    },
+    'react-router': {
+      root: 'ReactRouter',
+      commonjs: 'react-router',
+      commonjs2: 'react-router',
+      amd: 'react-router',
+    },
+    'react-router-dom': {
+      root: 'ReactRouterDOM',
+      commonjs: 'react-router-dom',
+      commonjs2: 'react-router-dom',
+      amd: 'react-router-dom',
+    },
+    promise: {
+      root: 'Promise',
+      commonjs: 'promise',
+      commonjs2: 'promise',
+      amd: 'promise'
+    }
+  }
 };
