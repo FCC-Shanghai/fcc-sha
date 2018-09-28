@@ -61,7 +61,7 @@ export default class Contributors extends React.PureComponent<any, IState> {
         <div className="sha-title">
           如何成为一位贡献者
         </div>
-        <p>FCC上海社区绝不讲社区志愿者的贡献做量化, 上述排列仅为参与先后顺序</p>
+        <p>FCC上海社区绝不将社区志愿者的贡献做量化, 上述排列仅为参与先后顺序</p>
         <p>
           成为一位项目贡献者非常简单, 这里有一个链接, 相信你能在里面找到你想要的答案。
           <a href="https://github.com/FCC-Shanghai/fcc-sha/blob/master/README.md" target="_blank" rel="noopener noreferrer">链接</a>
