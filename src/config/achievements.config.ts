@@ -59,7 +59,7 @@ const ACHIEVEMENTS: Array<IAchievement> = [{
         {agenda: '2、webRTC的场景创新和体验优化 - 韦躐晟；', slidesUrl: 'https://drive.google.com/file/d/1t4rfAeYmmpdPO-f4vSgJUzA5J8HKq5a6/view?usp=sharing', type: activityTypeEnum.TALK},
         {agenda: '3、点融CIS基础设施 - 林选伟；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vTielVNY-uGXQduStugzXq4jPepTDns66AbtgyL3DNKmzx48W36Ngx_2QI438XUJFQ2C35aH7UWZF-Z/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
         {agenda: '4、函数式语言: ClosureScript 在前端开发的体验 - 题叶；', slidesUrl: 'https://gist.github.com/jiyinyiyong/561cd06ad1a1537dc8bcc15109bcf1cc', type: activityTypeEnum.TALK},
-        {agenda: '5、在错误中寻找正确的方向: 应用升级和重构之路 - WiWi；', slidesUrl: 'https://drive.google.com/open?id=0ByUlCDydqkHLcWNDY0R3N0FJMDZkRmxaWDRwdUJfQ3I1WDJZ', type: activityTypeEnum.TALK},
+        {agenda: '5、在错误中寻找正确的方向: 应用升级和重构之路 - WiWi；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vQ8wQG-Ja13GbjIrkVvBtnMikqGIUsnQhuzQHtj6RKdn1tUrFMLPaYRFAVfVY2lRGOOrTZc_2_92ei5/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
         {agenda: '自由交流 合影留念；', slidesUrl: null, type: activityTypeEnum.NONE_TALK}
     ],
     img: '/static/imgs/fcc-meetup4.JPG'

@@ -64,6 +64,7 @@ module.exports = {
     filename: '[name].[hash:7].js',
     // There are also additional JS chunk files if you use code splitting.
     chunkFilename: 'dist/[name].chunk.js',
+    libraryTarget: 'umd',
     // This is the URL that app is served from. We use "/" in development.
     // publicPath: publicPath,
     // Point sourcemap entries to original disk location (format as URL on Windows)
