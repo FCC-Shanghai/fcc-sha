@@ -31,6 +31,12 @@ export const CONTRIBUTORS: Array<IContributor> = [
     cup: 'A++'
   },
   {
+    username: '荷马',
+    nickname: 'homer6wang',
+    hobbies: ['疯狂撸代码', '养猫'],
+    cup: 'B+'
+  },
+  {
     username: 'kerentang',
     nickname: '托尔老师',
     hobbies: ['遛狗', '撸代码'],
@@ -51,7 +57,7 @@ export const CONTRIBUTORS: Array<IContributor> = [
   {
     username: 'alimjanqadir',
     nickname: '阿力木江',
-    hobbies: ['Andorid', 'Java'],
+    hobbies: ['Android', 'Java'],
     cup: '未知'
   },
   {
