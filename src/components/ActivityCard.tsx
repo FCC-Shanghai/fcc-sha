@@ -4,6 +4,10 @@ import Col from 'antd/es/col';
 import Card from 'antd/es/card';
 import Timeline from 'antd/es/timeline';
 import { activityTypeEnum, IAchievement } from '@/config/achievements.config';
+import LazyImg from './LazyImg';
+
+const IMAGE_PLACEHOLDER = '/static/imgs/EastPerl.svg';
+
 interface IProps extends IAchievement { }
 
 interface IState { } // No state
@@ -43,7 +47,7 @@ export default class ActivityCard extends React.PureComponent<IProps, IState> {
       <Card className="sha-activity-card" title={title}>
         <Row>
           <Col span={10}>
-            <img src={img} alt="活动照片" width="100%" />
+            <LazyImg src={img} placeholder={IMAGE_PLACEHOLDER} alt="活动照片" width="100%"/>
           </Col>
           <Col offset={2} span={12}>
             <Timeline>
