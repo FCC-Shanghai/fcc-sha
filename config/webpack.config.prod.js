@@ -94,7 +94,7 @@ module.exports = {
     rules: [{
         test: /\.tsx?$/,
         loader: require.resolve('awesome-typescript-loader'),
-        exclude: [path.resolve(__dirname), 'node_modules'],
+        exclude: [path.resolve(__dirname, 'node_modules')],
         // options: {
         //   happyPackMode: true,
         // }
