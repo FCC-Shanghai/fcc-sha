@@ -31,8 +31,8 @@ export const CONTRIBUTORS: Array<IContributor> = [
     cup: 'A++'
   },
   {
-    username: '荷马',
-    nickname: 'homer6wang',
+    username: 'homer6wang',
+    nickname: '荷马',
     hobbies: ['疯狂撸代码', '养猫'],
     cup: 'B+'
   },
