@@ -10,10 +10,9 @@ type IProps = {
   width?: number | string;
   height?: number | string;
   alt?: string;
-  placeholder: string;
 }
 
-
+const FALLBACK_IMG = '/static/imgs/EastPerl.svg'; 
 export default class LazyImg extends React.PureComponent<IProps, IState> {
 
   constructor(props: IProps) {
@@ -46,7 +45,7 @@ export default class LazyImg extends React.PureComponent<IProps, IState> {
 
   render() {
     let { loaded } = this.state;
-    let { src, width, height, alt, placeholder } = this.props;
+    let { src, width, height, alt} = this.props;
     return (
       <>
         {
@@ -55,7 +54,7 @@ export default class LazyImg extends React.PureComponent<IProps, IState> {
             :
             <div>
               <img src={src} style={{ display: 'none' }} onLoad={this.onImgLoaded} />
-              <img src={placeholder} width={width} height={'288.11px'} alt={alt} />
+              <img src={FALLBACK_IMG} width={width} height={height} alt={alt} />
             </div>
         }
       </>

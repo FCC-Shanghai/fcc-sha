@@ -6,12 +6,25 @@ import {
   Redirect
 } from 'react-router-dom';
 
-// components
+import * as Loadable from 'react-loadable';
 
-import AboutUs from '@/pages/AboutUs';
-import Contributors from '@/pages/Contributors';
-import Achievements from '@/pages/Achievements';
-import SideBar from '@/pages/SideBar';
+import Loading from '@Components/Loading';
+
+function Loader<Props extends object>(
+  loader: () => Promise<React.ComponentType<Props> | { default: React.ComponentType<Props> }>
+): React.ComponentType<Props> & Loadable.LoadableComponent {
+  return Loadable({
+    loader: loader,
+    loading: Loading
+  });
+}
+// components
+const AboutUs = Loader(() => import(/* webpackChunkName: "AboutUs" */ '@/pages/AboutUs'));
+
+const Contributors = Loader(() => import(/* webpackChunkName: "Contributors" */ '@/pages/Contributors'));
+
+const Achievements = Loader(() => import(/* webpackChunkName: "Achievements" */ '@/pages/Achievements'));
+const SideBar = Loader(() => import(/* webpackChunkName: "SideBar" */ '@/pages/SideBar'));
 
 export const FccSha = () => (
   <Router>
