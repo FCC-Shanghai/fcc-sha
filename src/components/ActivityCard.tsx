@@ -47,7 +47,7 @@ export default class ActivityCard extends React.PureComponent<IProps, IState> {
       <Card className="sha-activity-card" title={title}>
         <Row>
           <Col span={10}>
-            <LazyImg src={img} placeholder={IMAGE_PLACEHOLDER} alt="活动照片" width="100%"/>
+            <LazyImg src={img} alt="活动照片" width="100%" height="288.11px"/>
           </Col>
           <Col offset={2} span={12}>
             <Timeline>

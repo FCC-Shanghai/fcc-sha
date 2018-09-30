@@ -37,6 +37,48 @@ h1, h2, h3, h4, h5 {
     .sha-side-main-phone{
       display: none;
     }
+
+    .sha-lazyloading {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .sha-loading-part {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -100px;
+        img {
+          display: block;
+        }
+        .sha-loading-indicator {
+          position: absolute;
+          left: 50%;
+          margin-left: -20px;
+          padding-top: 0px;
+          margin-top: 20px;
+          width: 40px;
+          height: 40px;
+          animation-name: spinning;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+
+        @keyframes spinning {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+
+    }
+
     .sha-side-main {
       user-select: none;
       cursor: default;
