@@ -113,6 +113,50 @@ h1, h2, h3, h4, h5 {
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 15px rgba(0, 0, 0, 0.1); }
     #root .sha-main .sha-side-main-phone {
       display: none; }
+    #root .sha-main .sha-lazyloading {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      #root .sha-main .sha-lazyloading .sha-loading-part {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -100px; }
+        #root .sha-main .sha-lazyloading .sha-loading-part img {
+          display: block; }
+        #root .sha-main .sha-lazyloading .sha-loading-part .sha-loading-indicator {
+          position: absolute;
+          left: 50%;
+          margin-left: -20px;
+          padding-top: 0px;
+          margin-top: 20px;
+          width: 40px;
+          height: 40px;
+          -webkit-animation-name: spinning;
+                  animation-name: spinning;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s;
+          -webkit-animation-iteration-count: infinite;
+                  animation-iteration-count: infinite;
+          -webkit-animation-timing-function: linear;
+                  animation-timing-function: linear; }
+
+@-webkit-keyframes spinning {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spinning {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
     #root .sha-main .sha-side-main {
       -webkit-user-select: none;
          -moz-user-select: none;
@@ -191,75 +235,4 @@ h1, h2, h3, h4, h5 {
       #root .sha-main .sha-router-main {
         width: 100%;
         margin: 0 0; } }
-
-@-webkit-keyframes sha-bg-stripes {
-  from {
-    background-position: 228px 0; }
-  to {
-    background-position: 0 0; } }
-@keyframes sha-bg-stripes {
-  from {
-    background-position: 228px 0; }
-  to {
-    background-position: 0 0; } }
-
-.sha-contributors {
-  height: 100%;
-  overflow-y: scroll;
-  font-weight: 200;
-  color: #293a46; }
-  .sha-contributors .sha-title {
-    font-size: 48px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  .sha-contributors .sha-contributors-wall .sha-contributor {
-    width: 256px;
-    height: 310px;
-    margin-bottom: 20px;
-    color: #293a46; }
-    .sha-contributors .sha-contributors-wall .sha-contributor:hover {
-      cursor: pointer; }
-      .sha-contributors .sha-contributors-wall .sha-contributor:hover:before {
-        -webkit-animation: sha-bg-stripes 2s linear infinite;
-                animation: sha-bg-stripes 2s linear infinite; }
-    .sha-contributors .sha-contributors-wall .sha-contributor:before {
-      display: inline-block;
-      content: "";
-      width: 100%;
-      height: 100px;
-      background-image: -webkit-linear-gradient(68deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-      background-image: -o-linear-gradient(68deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-      background-image: linear-gradient(22deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-      background-color: cadetblue; }
-    .sha-contributors .sha-contributors-wall .sha-contributor .sha-logo {
-      display: inline-block;
-      width: 90px;
-      height: 90px;
-      position: absolute;
-      border-radius: 50%;
-      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 15px rgba(0, 0, 0, 0.1);
-              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 15px rgba(0, 0, 0, 0.1);
-      border: 3px solid #fff;
-      background-color: #fff;
-      left: 82px;
-      top: 55px; }
-    .sha-contributors .sha-contributors-wall .sha-contributor .sha-info {
-      line-height: 26px;
-      padding: 30px;
-      text-align: center; }
-      .sha-contributors .sha-contributors-wall .sha-contributor .sha-info .sha-nickname {
-        font-size: 20px;
-        word-spacing: 2px;
-        letter-spacing: 2px;
-        margin-bottom: 20px; }
-
-@media (max-width: 768px) {
-  .sha-contributors .sha-title {
-    text-align: center;
-    font-size: 24px; }
-  .sha-contributors .sha-contributors-wall .sha-contributor {
-    width: 100%; }
-    .sha-contributors .sha-contributors-wall .sha-contributor .sha-logo {
-      left: calc(50% - 45px); } }
 
