@@ -19,7 +19,7 @@ export var activityTypeEnum = {
 }
 
 const ACHIEVEMENTS: Array<IAchievement> = [{
-    title: '2017/04 FCC上海前端技术群线下Meetup #1',
+    title: '2017/04 FCC 上海社区线下技术 Meetup #1',
     content: [
         {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
         {agenda: '1、造轮子-简单的 MVVM 框架核心 - 于航；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vT1H7zXGGdkd008cWJmnEbxufEzQZ5m5yzS3IyK7c-rxJEpIM04bkSDtZcRc9WBi_tCtBc2ZUBCCoe3/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
@@ -30,7 +30,7 @@ const ACHIEVEMENTS: Array<IAchievement> = [{
     ],
     img: '/static/imgs/fcc-meetup1.jpeg'
 }, {
-    title: '2017/09 FCC上海前端技术群线下Meetup #2',
+    title: '2017/09 FCC 上海社区线下技术 Meetup #2',
     content: [
         {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
         {agenda: '1、函数柯理化在前端开发中的应用 - 于航；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vSoDMuL0tKgB98i9cQ8SYtsmgvyNRqTmyAnKlN1xF4G9QS-Zzd1PQ6B8ymDab6knNTxdHBnIF-Pg0qq/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
@@ -40,7 +40,7 @@ const ACHIEVEMENTS: Array<IAchievement> = [{
     ],
     img: '/static/imgs/fcc-meetup2.jpeg'
 }, {
-    title: '2018/06 FCC上海前端技术群线下Meetup #3',
+    title: '2018/06 FCC 上海社区线下技术 Meetup #3',
     content: [
         {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
         {agenda: '1、闲话CDN - 天哥；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vTla-WWRGFeeeECqvZOsR7DZrFmcwy5Xdb0H6bm5SFOHDA8MCL4I7fjMa6lbXiOQLen3iDnFxMYK8DL/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
@@ -52,7 +52,7 @@ const ACHIEVEMENTS: Array<IAchievement> = [{
     ],
     img: '/static/imgs/fcc-meetup3.jpeg'
 }, {
-    title: '2018/09 FCC上海前端技术群线下Meetup #4',
+    title: '2018/09 FCC 上海社区线下技术 Meetup #4',
     content: [
         {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
         {agenda: '1、Layers: a case study of CSS optimization - 🐑🐑🐑(吴名扬)；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vRIsRF2Kz0to_0OJ_vrS4MODvj__SLtRWlXGdqt38VbahxXMHmGHyd5QvsxSCRlxM0ZWjV-szjI3qEy/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
@@ -63,6 +63,17 @@ const ACHIEVEMENTS: Array<IAchievement> = [{
         {agenda: '自由交流 合影留念；', slidesUrl: null, type: activityTypeEnum.NONE_TALK}
     ],
     img: '/static/imgs/fcc-meetup4.JPG'
+}, {
+    title: '2019/07 FCC 上海社区线下技术 Meetup #5',
+    content: [
+        {agenda: '开场；', slidesUrl: null, type: activityTypeEnum.NONE_TALK},
+        {agenda: '1、Serverless 与前端研发模式升级 - 于航；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vRIsRF2Kz0to_0OJ_vrS4MODvj__SLtRWlXGdqt38VbahxXMHmGHyd5QvsxSCRlxM0ZWjV-szjI3qEy/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
+        {agenda: '2、前端黑科技之 PWA - 赵俊峰；', slidesUrl: 'https://drive.google.com/file/d/1t4rfAeYmmpdPO-f4vSgJUzA5J8HKq5a6/view?usp=sharing', type: activityTypeEnum.TALK},
+        {agenda: '3、Rust - A JavaScript Programmer Perspective - 🐔；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vRs2-P8xsKmAJmJqpHrwO_5AjzDFBzd0-YUjYaePaoq-N8St09Ipaqik5XqPhPhgLLkX78d2_oGcnxl/pub?start=false&loop=false&delayms=3000&slide=id.g5df0e74252_0_0', type: activityTypeEnum.TALK},
+        {agenda: '4、打造 20000 Star 的前端开源项目；', slidesUrl: 'https://docs.google.com/presentation/d/e/2PACX-1vTuqHnzZHzy4dvznUtD9bFAA2VkR5xxBH6U3iaG5z9JSzKespjK9QA-g6EDd5Gq8kU6NUTgpHQBXIXu/pub?start=false&loop=false&delayms=3000', type: activityTypeEnum.TALK},
+        {agenda: '自由交流 合影留念；', slidesUrl: null, type: activityTypeEnum.NONE_TALK}
+    ],
+    img: '/static/imgs/fcc-meetup5.JPG'
 }
 
 

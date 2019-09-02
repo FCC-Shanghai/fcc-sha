@@ -110,7 +110,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
-        exclude: ['node_modules']
+        exclude: [path.resolve(__dirname, 'node_modules/')]
       },
       // ** ADDING/UPDATING LOADERS **
       // The "file" loader handles all assets unless explicitly excluded.
@@ -187,7 +187,7 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
-        exclude: ['node_modules/']
+        exclude: [path.resolve(__dirname, 'node_modules/')]
       }
       // Remember to add the new extension(s) to the "file" loader exclusion list.
     ],

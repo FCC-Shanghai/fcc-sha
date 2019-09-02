@@ -43,7 +43,7 @@ export const CONTRIBUTORS: Array<IContributor> = [
     cup: '未知'
   },
   {
-    username: 'kongwsh',
+    username: 'river2333',
     nickname: '铁T',
     hobbies: ['铲屎', '拍罐头', '嘻嘻'],
     cup: '牛油果'

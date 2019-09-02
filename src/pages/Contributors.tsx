@@ -4,6 +4,7 @@ import Contributor from '@Components/Contributor';
 import userNameList, { IContributor } from '@/config/contributors.config';
 import Col from 'antd/es/col';
 import Row from 'antd/es/row';
+import { LocaleContext } from '@/Context';
 
 type IState = {
   users: Array<IContributor>;
@@ -11,8 +12,8 @@ type IState = {
 
 const USER_API_BASE_PATH = 'https://api.github.com/users/';
 
-export default class Contributors extends React.PureComponent<any, IState> {
-  constructor(props: void) {
+export default class Contributors extends React.PureComponent<{}, IState> {
+  constructor(props: object) {
     super(props);
     this.state = {
       users: userNameList
@@ -52,22 +53,23 @@ export default class Contributors extends React.PureComponent<any, IState> {
       );
     });
     return (
-      <div className="sha-contributors">
-        <div className="sha-title">Contributors</div>
-        <Row gutter={16} className="sha-contributors-wall">
-          {users}
-        </Row>
+      <LocaleContext.Consumer>
+        {({ locale }) => (
+          <div className="sha-contributors">
+            <div className="sha-title">{ locale['pages-contributors-a'] }</div>
+            <Row gutter={16} className="sha-contributors-wall">
+              {users}
+            </Row>
 
-        <div className="sha-title">
-          如何成为一位贡献者
-        </div>
-        <p>FCC上海社区绝不将社区志愿者的贡献做量化, 上述排列仅为参与先后顺序</p>
-        <p>
-          成为一位项目贡献者非常简单, 这里有一个链接, 相信你能在里面找到你想要的答案。
-          <a href="https://github.com/FCC-Shanghai/fcc-sha/blob/master/README.md" target="_blank" rel="noopener noreferrer">链接</a>
-        </p>
-      </div>
+            <div className="sha-title">{ locale['pages-contributors-b'] }</div>
+            <p>{ locale['pages-contributors-c'] }</p>
+            <p>
+            { locale['pages-contributors-d'] }
+              <a href="https://github.com/FCC-Shanghai/fcc-sha/blob/master/README.md" target="_blank" rel="noopener noreferrer">此处链接</a>
+            </p>
+          </div>
+        )}
+      </LocaleContext.Consumer>
     )
   }
-
 }
