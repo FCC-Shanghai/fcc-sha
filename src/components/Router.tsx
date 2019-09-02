@@ -5,7 +5,6 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
-import { LocaleContext } from '@/Context';
 import * as Loadable from 'react-loadable';
 import Loading from '@Components/Loading';
 
@@ -23,22 +22,18 @@ const Contributors = Loader(() => import(/* webpackChunkName: "Contributors" */ 
 const Achievements = Loader(() => import(/* webpackChunkName: "Achievements" */ '@/pages/Achievements'));
 const SideBar = Loader(() => import(/* webpackChunkName: "SideBar" */ '@/pages/SideBar'));
 
-export default class FccSha extends React.Component {
-  render() {
-    return (
-      <Router>
-        <div className="sha-main">
-          <div className="sha-side-main">
-            <SideBar />
-          </div>
-          <div className="sha-router-main">
-            <Redirect from="/" to="about-us" />
-            <Route path="/about-us" component={AboutUs} />
-            <Route path="/contributors" component={Contributors} />
-            <Route path="/achievements" component={Achievements} />
-          </div>
-        </div>
-      </Router>
-    );
-  }
-}
+export default () => (
+  <Router>
+    <div className="sha-main">
+      <div className="sha-side-main">
+        <SideBar />
+      </div>
+      <div className="sha-router-main">
+        <Redirect from="/" to="about-us" />
+        <Route path="/about-us" component={AboutUs} />
+        <Route path="/contributors" component={Contributors} />
+        <Route path="/achievements" component={Achievements} />
+      </div>
+    </div>
+  </Router>
+);

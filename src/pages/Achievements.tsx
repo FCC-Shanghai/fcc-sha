@@ -17,7 +17,7 @@ export default class Achievements extends React.PureComponent {
           <div className="sha-title">{ locale['pages-achievement-a'] }</div>
           {element}
           <Card>
-            <p style={{textAlign: "center"}}>... 更多活动，敬请关注 ...</p>
+            <p style={{textAlign: "center"}}>{ locale['pages-achievement-b'] }</p>
           </Card>
         </div>
         )}
