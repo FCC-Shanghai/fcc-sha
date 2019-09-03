@@ -6,7 +6,7 @@ import Popover from 'antd/es/popover';
 import Button from 'antd/es/button';
 import Icon from 'antd/es/icon';
 
-let contactUsStr = "扫描二维码, 添加机器人为好友, 发送对应城市名: \"上海\", 即可进群"
+let contactUsStr = "扫描二维码，添加机器人为好友，验证信息备注城市名: “上海”，即可进群。"
 const imgWidth = {width: 200};
 const imgHeight = {height: 320};
 const imgSize = Object.assign({}, imgWidth, imgHeight);
@@ -28,9 +28,9 @@ export default class SideBar extends React.Component {
     return (
       <div>
         <img className="sha-main-logo" src="/static/imgs/EastPerl.svg" alt="EastPerl"/>
-        <h2 className="sha-img-legend">FCC Shanghai</h2>
+        <h2 className="sha-img-legend">FCC Shanghai Community</h2>
         <Popover content={NavBar} trigger="click">
-          <Button className="sha-toggle-nav" type="primary">
+          <Button className="sha-toggle-nav" type="primary" href="">
             <Icon type='menu-unfold'/>
           </Button>
         </Popover>
@@ -42,10 +42,6 @@ export default class SideBar extends React.Component {
           <p className="sha-social-icons">
             <a href="https://github.com/FCC-Shanghai" target="_blank" rel="noopener noreferrer">
               <img src="/static/imgs/github.svg" alt="" className="sha-social-icon"/>
-            </a>
-            <a href="//shang.qq.com/wpa/qunwpa?idkey=cd476c93cb4faf805ba36b1be3a0daf0359d31628b14f654fc7a086dd911d05a"
-               target="_blank" rel="noopener noreferrer">
-              <img src="/static/imgs/qq.svg" alt="" className="sha-social-icon"/>
             </a>
             <Popover content={wechatPopover}>
               <a target="_blank" rel="noopener noreferrer">

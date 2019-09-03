@@ -2,6 +2,7 @@ import * as React from 'react';
 import ActivityCard from '@Components/ActivityCard';
 import Payload from '@/config/achievements.config';
 import Card from 'antd/es/card';
+import { LocaleContext } from '@/Context';
 
 export default class Achievements extends React.PureComponent {
   render() {
@@ -10,11 +11,17 @@ export default class Achievements extends React.PureComponent {
     })
 
     return (
-        <div className="sha-achievements"> {element}
+      <LocaleContext.Consumer>
+        {({ locale }) => (
+        <div className="sha-achievements"> 
+          <div className="sha-title">{ locale['pages-achievement-a'] }</div>
+          {element}
           <Card>
-            <p style={{textAlign: "center"}}>... 更多活动 ...</p>
+            <p style={{textAlign: "center"}}>{ locale['pages-achievement-b'] }</p>
           </Card>
         </div>
+        )}
+      </LocaleContext.Consumer>
     )
   }
 }

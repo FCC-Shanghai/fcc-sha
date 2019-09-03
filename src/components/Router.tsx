@@ -5,9 +5,7 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
-
 import * as Loadable from 'react-loadable';
-
 import Loading from '@Components/Loading';
 
 function Loader<Props extends object>(
@@ -20,13 +18,11 @@ function Loader<Props extends object>(
 }
 // components
 const AboutUs = Loader(() => import(/* webpackChunkName: "AboutUs" */ '@/pages/AboutUs'));
-
 const Contributors = Loader(() => import(/* webpackChunkName: "Contributors" */ '@/pages/Contributors'));
-
 const Achievements = Loader(() => import(/* webpackChunkName: "Achievements" */ '@/pages/Achievements'));
 const SideBar = Loader(() => import(/* webpackChunkName: "SideBar" */ '@/pages/SideBar'));
 
-export const FccSha = () => (
+export default () => (
   <Router>
     <div className="sha-main">
       <div className="sha-side-main">
