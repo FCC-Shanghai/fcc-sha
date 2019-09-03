@@ -111,6 +111,12 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 15px rgba(0, 0, 0, 0.1); }
+    #root .sha-main .sha-title {
+      font-weight: 200;
+      font-size: 32px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     #root .sha-main .sha-side-main-phone {
       display: none; }
     #root .sha-main .sha-lazyloading {
@@ -177,7 +183,7 @@ h1, h2, h3, h4, h5 {
       #root .sha-main .sha-side-main .sha-img-legend {
         text-align: center;
         color: #6d6d6d;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: normal;
         margin: 20px 0; }
       #root .sha-main .sha-side-main .ant-menu-inline {
@@ -187,7 +193,8 @@ h1, h2, h3, h4, h5 {
         bottom: 0;
         width: 100%; }
         #root .sha-main .sha-side-main .sha-social .sha-social-legend {
-          text-align: center; }
+          text-align: center;
+          margin-bottom: 10px; }
         #root .sha-main .sha-side-main .sha-social .sha-social-icons {
           position: relative;
           text-align: center; }
